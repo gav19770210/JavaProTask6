@@ -11,6 +11,6 @@ import lombok.*;
 @EqualsAndHashCode
 public class User {
     private Long id;
-    @NotBlank(message = "name должно быть задано")
+    @NotBlank(message = "Поле <name> должно быть заполнено")
     private String name;
 }

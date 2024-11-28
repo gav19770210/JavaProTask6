@@ -12,9 +12,9 @@ import java.math.BigDecimal;
 @AllArgsConstructor
 @ToString
 public class PaymentRequest {
-    @NotNull(message = "productId должен быть задан")
+    @NotNull(message = "Поле <productId> должно быть заполнено")
     private Long productId;
     @NotNull
-    @Min(value = 0, message = "Сумма добжна быть больше нуля")
+    @Min(value = 0, message = "Поле <summa> должно быть заполнено")
     private BigDecimal summa;
 }

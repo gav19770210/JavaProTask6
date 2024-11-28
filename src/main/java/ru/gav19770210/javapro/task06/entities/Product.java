@@ -15,13 +15,13 @@ import java.math.BigDecimal;
 @EqualsAndHashCode
 public class Product {
     private Long id;
-    @NotNull(message = "userId должен быть задан")
+    @NotNull(message = "Поле <userId> должно быть заполнено")
     private Long userId;
-    @NotBlank(message = "accountNumber должен быть задан")
+    @NotBlank(message = "Поле <accountNumber> должно быть заполнено")
     private String accountNumber;
-    @NotNull
-    @Min(value = 0, message = "Сумма должна быть больше нуля")
+    @NotNull(message = "Поле <balance> должно быть заполнено")
+    @Min(value = 0, message = "Значение поля <balance> должно быть больше нуля")
     private BigDecimal balance;
-    @NotNull(message = "type должен быть задан")
+    @NotNull(message = "Поле <type> должно быть заполнено")
     private ProductType type;
 }
