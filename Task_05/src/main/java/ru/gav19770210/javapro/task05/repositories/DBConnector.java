@@ -1,4 +1,4 @@
-package ru.gav19770210.javapro.task06.repositories;
+package ru.gav19770210.javapro.task05.repositories;
 
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;

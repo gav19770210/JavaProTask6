@@ -1,4 +1,4 @@
-package ru.gav19770210.javapro.task06.entities;
+package ru.gav19770210.javapro.task05.entities;
 
 import jakarta.validation.constraints.NotBlank;
 import lombok.*;

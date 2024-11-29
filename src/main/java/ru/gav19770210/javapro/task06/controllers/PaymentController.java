@@ -7,14 +7,16 @@ import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.servers.Server;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
+import ru.gav19770210.javapro.task05.controllers.ErrorMessage;
+import ru.gav19770210.javapro.task05.entities.Product;
 import ru.gav19770210.javapro.task06.dto.PaymentRequest;
 import ru.gav19770210.javapro.task06.dto.PaymentResponse;
-import ru.gav19770210.javapro.task06.entities.Product;
 import ru.gav19770210.javapro.task06.services.PaymentService;
 
 import java.util.List;
@@ -37,6 +39,7 @@ import java.util.List;
 public class PaymentController {
     private final PaymentService paymentService;
 
+    @Autowired
     public PaymentController(PaymentService paymentService) {
         this.paymentService = paymentService;
     }

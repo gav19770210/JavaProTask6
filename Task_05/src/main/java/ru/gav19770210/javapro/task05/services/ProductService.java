@@ -1,6 +1,6 @@
-package ru.gav19770210.javapro.task06.services;
+package ru.gav19770210.javapro.task05.services;
 
-import ru.gav19770210.javapro.task06.entities.Product;
+import ru.gav19770210.javapro.task05.entities.Product;
 
 import java.util.List;
 

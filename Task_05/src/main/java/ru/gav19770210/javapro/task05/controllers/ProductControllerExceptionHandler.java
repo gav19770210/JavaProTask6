@@ -1,4 +1,4 @@
-package ru.gav19770210.javapro.task06.controllers;
+package ru.gav19770210.javapro.task05.controllers;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -8,7 +8,6 @@ import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.MissingServletRequestParameterException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
-import org.springframework.web.client.HttpClientErrorException;
 import org.springframework.web.context.request.WebRequest;
 import org.springframework.web.method.annotation.MethodArgumentTypeMismatchException;
 
@@ -17,8 +16,8 @@ import java.io.StringWriter;
 import java.util.NoSuchElementException;
 import java.util.stream.Collectors;
 
-@RestControllerAdvice
-public class ControllerExceptionHandler {
+@RestControllerAdvice(basePackages = "ru.gav19770210.javapro.task05")
+public class ProductControllerExceptionHandler {
     @ExceptionHandler({HttpMessageNotReadableException.class,
             MissingServletRequestParameterException.class,
             IllegalArgumentException.class})
@@ -65,14 +64,6 @@ public class ControllerExceptionHandler {
                 .status(HttpStatus.BAD_REQUEST)
                 .contentType(MediaType.APPLICATION_JSON)
                 .body(errorMessage);
-    }
-
-    @ExceptionHandler(HttpClientErrorException.class)
-    public ResponseEntity<String> illegalArgumentException(HttpClientErrorException exception, WebRequest request) {
-        return ResponseEntity
-                .status(exception.getStatusCode())
-                .contentType(MediaType.APPLICATION_JSON)
-                .body(exception.getResponseBodyAsString());
     }
 
     @ExceptionHandler(Exception.class)

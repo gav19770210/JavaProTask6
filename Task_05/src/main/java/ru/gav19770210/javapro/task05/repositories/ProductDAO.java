@@ -1,10 +1,10 @@
-package ru.gav19770210.javapro.task06.repositories;
+package ru.gav19770210.javapro.task05.repositories;
 
 import lombok.SneakyThrows;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
-import ru.gav19770210.javapro.task06.entities.Product;
-import ru.gav19770210.javapro.task06.entities.ProductType;
+import ru.gav19770210.javapro.task05.entities.Product;
+import ru.gav19770210.javapro.task05.entities.ProductType;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

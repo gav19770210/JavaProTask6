@@ -1,4 +1,4 @@
-package ru.gav19770210.javapro.task06.controllers;
+package ru.gav19770210.javapro.task05.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -6,8 +6,8 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
-import ru.gav19770210.javapro.task06.entities.Product;
-import ru.gav19770210.javapro.task06.services.ProductService;
+import ru.gav19770210.javapro.task05.entities.Product;
+import ru.gav19770210.javapro.task05.services.ProductService;
 
 import java.util.List;
 

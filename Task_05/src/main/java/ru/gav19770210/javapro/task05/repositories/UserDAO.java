@@ -1,8 +1,8 @@
-package ru.gav19770210.javapro.task06.repositories;
+package ru.gav19770210.javapro.task05.repositories;
 
 import lombok.SneakyThrows;
 import org.springframework.stereotype.Repository;
-import ru.gav19770210.javapro.task06.entities.User;
+import ru.gav19770210.javapro.task05.entities.User;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

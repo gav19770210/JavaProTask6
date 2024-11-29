@@ -1,4 +1,4 @@
-package ru.gav19770210.javapro.task06.controllers;
+package ru.gav19770210.javapro.task05.controllers;
 
 import lombok.Getter;
 

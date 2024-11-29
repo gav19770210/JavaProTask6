@@ -1,8 +1,8 @@
-package ru.gav19770210.javapro.task06.services;
+package ru.gav19770210.javapro.task05.services;
 
 import org.springframework.stereotype.Service;
-import ru.gav19770210.javapro.task06.entities.User;
-import ru.gav19770210.javapro.task06.repositories.UserDAO;
+import ru.gav19770210.javapro.task05.repositories.UserDAO;
+import ru.gav19770210.javapro.task05.entities.User;
 
 import java.util.List;
 import java.util.NoSuchElementException;

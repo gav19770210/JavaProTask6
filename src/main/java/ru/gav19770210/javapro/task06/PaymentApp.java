@@ -11,9 +11,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 - Добавить в процесс исполнения платежа выбор продукта, проверку его существования и достаточности средств на нем
 - Добавить возврат ошибок клиенту о проблемах как на стороне платежного сервиса, так и на стороне сервиса продуктов
  */
-@SpringBootApplication(scanBasePackages = "ru.gav19770210.javapro.task06")
-public class MainApp {
+@SpringBootApplication(scanBasePackages = "ru.gav19770210.javapro")
+public class PaymentApp {
     public static void main(String[] args) {
-        SpringApplication.run(MainApp.class, args);
+        SpringApplication.run(PaymentApp.class, args);
     }
 }

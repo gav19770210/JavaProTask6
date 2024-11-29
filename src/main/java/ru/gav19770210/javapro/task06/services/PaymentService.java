@@ -1,8 +1,8 @@
 package ru.gav19770210.javapro.task06.services;
 
+import ru.gav19770210.javapro.task05.entities.Product;
 import ru.gav19770210.javapro.task06.dto.PaymentRequest;
 import ru.gav19770210.javapro.task06.dto.PaymentResponse;
-import ru.gav19770210.javapro.task06.entities.Product;
 
 import java.math.BigDecimal;
 import java.util.List;
